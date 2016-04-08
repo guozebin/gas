@@ -9,7 +9,7 @@
 void splitelines(const char *buf, int arr[], int arr_max_len)
 {
 	int i = 1;
-	const char *bp = buf;
+	char *bp = buf;
 
 	while (*bp != '\0' && i < arr_max_len) {
 		/* Record position of newline(UNIX(LR)) */
